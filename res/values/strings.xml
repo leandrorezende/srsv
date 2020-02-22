@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">SRSV</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_usuario">Usuário</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_senha_atual">Senha atual</string>
+    <string name="hint_nova_senha">Nova senha</string>
+    <string name="hint_repetir_senha">Repetir senha</string>
+    <string name="hint_placa">placa Ex:ABC-1234</string>
+    <string name="hint_num_dispositivo">nº dispositivo</string>
+    <string name="hint_raio">raio de segurança</string>
+    <string name="lista_veiculo_num_dispositivo">Nº dispositivo</string>
+    <string name="lista_veiculo_saldo">Saldo</string>
+    <string name="lista_contato_numero">Número</string>
+    <string name="btn_login">Entrar</string>
+    <string name="btn_cad_veiculo">Cadastrar Veículo</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_link_cadastrar">Cadastre-se no SRSV</string>
+    <string name="btn_link_recuperar_senha">Esqueceu a senha?</string>
+    <string name="btn_link_login">Já cadastrado! Entrar.</string>
+    <string name="btn_logout">SAIR</string>
+    <string name="btn_mapa">\nM\nA\nP\nA\n</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_alterar">Alterar</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="btn_acoes">Informações de segurança</string>
+    <string name="btn_concluir">Concluir</string>
+    <string name="btn_reload">Recarregar</string>
+    <string name="btn_excluir">Excluir</string>
+    <string name="btn_editar">Editar</string>
+    <string name="cb_registro">Associar dispositivo a conta?</string>
+    <string name="label_cadastrar">Cadastrar Usuário</string>
+    <string name="label_recuperar_senha">Recuperar Senha</string>
+    <string name="label_destinatario">Lista de contatos</string>
+    <string name="label_trocar_senha">Trocar Senha</string>
+    <string name="label_meus_veiculo">Meus veículos</string>
+    <string name="label_lista_vazia_veiculo">nenhum veículo cadastrado</string>
+    <string name="label_lista_vazia_ocorrencia">nenhuma ocorrência recebida</string>
+    <string name="label_sensores">Sensores</string>
+    <string name="label_presenca">presença</string>
+    <string name="label_audio">áudio</string>
+    <string name="label_movimento">movimento</string>
+    <string name="label_controles">Controles</string>
+    <string name="label_ctrl_sistema">envio alertas</string>
+    <string name="label_ctrl_carro">bloqueio carro</string>
+    <string name="label_ctrl_alarme">func. alarme</string>
+    <string name="ocorrencia_audio">áudio interno</string>
+    <string name="ocorrencia_presenca">presença indivíduo</string>
+    <string name="ocorrencia_movimento">movimento do carro</string>
+    <string name="ocorrencia_interferencia">interferência no sistema</string>
+
+</resources>

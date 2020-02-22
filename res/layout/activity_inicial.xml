@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        style="@style/frame_layout_top" >
+
+        <ImageButton
+            style="@style/button_text"
+            android:layout_width="60dp"
+            android:layout_height="47dp"
+            android:layout_gravity="left"
+            android:onClick="configuracoes"
+            android:src="@android:drawable/ic_menu_preferences" />
+
+        <TextView style="@style/frame_layout_top_textview" />
+
+        <ImageView style="@style/frame_layout_top_imagemview" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/button_text"
+            android:layout_width="60dp"
+            android:layout_height="47dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_green"
+            android:onClick="fazerLogout"
+            android:text="@string/btn_logout"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/barra_customizada" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/label_meus_veiculo"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lista_vazia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableTop="@drawable/ic_menu_clear_playlist"
+        android:text="@string/label_lista_vazia_veiculo" />
+
+    <Button
+        android:id="@+id/btnRecarregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableTop="@drawable/ic_menu_refresh"
+        android:onClick="reload"
+        android:text="@string/btn_reload" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/lista"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@null"
+        android:orientation="vertical"
+        android:paddingBottom="56dp" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@null"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <Button
+            style="@style/button_text"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:onClick="cadastrarVeiculo"
+            android:text="@string/btn_cad_veiculo" />
+    </LinearLayout>
+
+</RelativeLayout>

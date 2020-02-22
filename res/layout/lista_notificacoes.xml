@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp" >
+    
+    <LinearLayout
+        android:id="@+id/titulo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/msg_notificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tabela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titulo"
+        android:layout_marginBottom="5dp"
+        android:shrinkColumns="1" >
+
+        <TableRow android:layout_marginLeft="30dp" >
+
+            <ImageView
+                android:id="@+id/not_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ocorrencia_audio"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="30dp" >
+
+            <ImageView
+                android:id="@+id/not_presenca"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/btn_check_buttonless_on" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ocorrencia_presenca"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="30dp" >
+
+            <ImageView
+                android:id="@+id/not_movimento"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_alert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ocorrencia_movimento"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="30dp" >
+
+            <ImageView
+                android:id="@+id/not_sistema"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_alert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ocorrencia_interferencia"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabela"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="11dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/retirar_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_delete" />
+    
+    <View
+        android:layout_below="@+id/horario"
+        android:layout_width="fill_parent"        
+        android:layout_height="1dip"
+        android:background="#000000" />
+
+</RelativeLayout>

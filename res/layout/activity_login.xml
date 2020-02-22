@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_top" >
+
+    <FrameLayout style="@style/frame_layout_top" >
+
+        <TextView style="@style/frame_layout_top_textview" />
+
+        <ImageView style="@style/frame_layout_top_imagemview" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/usuario"
+            style="@style/bg_editext"
+            android:hint="@string/hint_usuario"
+            android:inputType="textPersonName"
+            android:maxLength="32"
+            android:text="leandro.rezende" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/senha"
+            style="@style/bg_editext"
+            android:hint="@string/hint_senha"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:text="123" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom" >
+
+            <CheckBox
+                android:id="@+id/checkBoxRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="@string/cb_registro"
+                android:textColor="@color/green"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            style="@style/button_text"
+            android:onClick="login"
+            android:text="@string/btn_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/bg_no_backgroud"
+            android:layout_marginBottom="20dp"
+            android:onClick="recuperarSenha"
+            android:text="@string/btn_link_recuperar_senha" />
+
+        <Button
+            style="@style/bg_no_backgroud"
+            android:layout_marginBottom="52dp"
+            android:onClick="cadastrar"
+            android:text="@string/btn_link_cadastrar" />
+    </LinearLayout>
+
+</LinearLayout>

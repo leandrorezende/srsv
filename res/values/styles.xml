@@ -1,0 +1,121 @@
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="button_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_green</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="bg_editext">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/input_hint_color</item>
+    </style>
+
+    <style name="bg_no_backgroud">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="VerticalLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_top">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="frame_layout_top">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/green</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="frame_layout_top_textview">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginLeft">78dp</item>
+        <item name="android:layout_marginRight">70dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">SRSV</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    
+    <style name="frame_layout_top_imagemview">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginRight">83dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:src">@drawable/carro_icone_trans</item>
+    </style>
+    
+    <style name="base">
+		<item name="android:padding">10dp</item>
+	</style>
+	
+	<style name="title" parent="@style/base">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<style name="body" parent="@style/base">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	
+    <style name="dialog">
+        <item name="android:fullDark">@drawable/dialog_body</item>
+        <item name="android:topDark">@drawable/dialog_title</item>
+        <item name="android:centerDark">@drawable/dialog_body</item>
+        <item name="android:bottomDark">@drawable/dialog_footer</item>
+        <item name="android:fullBright">@drawable/dialog_body</item>
+        <item name="android:centerBright">@drawable/dialog_body</item>
+        <item name="android:bottomBright">@drawable/dialog_footer</item>
+        <item name="android:bottomMedium">@drawable/dialog_footer</item>
+        <item name="android:centerMedium">@drawable/dialog_body</item>
+	</style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout style="@style/frame_layout_top" >
+
+        <ImageButton
+            style="@style/button_text"
+            android:layout_width="60dp"
+            android:layout_height="47dp"
+            android:layout_gravity="left"
+            android:background="@drawable/btn_green"
+            android:onClick="fecharView"
+            android:src="@drawable/ic_menu_back" />
+
+        <TextView
+            android:id="@+id/placa"
+            android:layout_width="140dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="@drawable/placa_carro"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            style="@style/button_text"
+            android:layout_width="60dp"
+            android:layout_height="47dp"
+            android:layout_gravity="right"
+            android:onClick="fazerLogout"
+            android:text="@string/btn_logout"
+            android:textSize="17sp" />
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        class="com.google.android.gms.maps.SupportMapFragment" >
+
+        <Button
+            android:id="@+id/btnRecarregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="29dp"
+            android:drawableTop="@drawable/ic_menu_refresh"
+            android:onClick="reload"
+            android:text="@string/btn_reload" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="29dp" />
+
+        <ImageButton
+            android:id="@+id/btnRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="6dp"
+            android:background="@null"
+            android:onClick="getRoute"
+            android:src="@drawable/ic_route_ativado" />
+    </fragment>
+
+</RelativeLayout>

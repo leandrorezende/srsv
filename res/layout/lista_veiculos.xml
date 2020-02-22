@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/tabela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/item_lista_layout"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:id="@+id/placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TableRow android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="@string/lista_veiculo_num_dispositivo" />
+
+            <TextView
+                android:id="@+id/txt_num_dispositivo"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="110dp"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="@string/lista_veiculo_saldo" />
+
+            <TextView
+                android:id="@+id/txt_saldo"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="110dp"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnAcoes"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="55dp"
+            android:background="@drawable/btn_green"
+            android:shadowColor="@color/black"
+            android:text="@string/btn_acoes"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="37dp"
+        android:layout_height="111dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_mapa"
+        android:text="@string/btn_mapa"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

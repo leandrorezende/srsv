@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_top" >
+
+    <FrameLayout style="@style/frame_layout_top" >
+
+        <TextView style="@style/frame_layout_top_textview" />
+
+        <ImageView style="@style/frame_layout_top_imagemview" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/barra_customizada" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/label_cadastrar"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/nome"
+            style="@style/bg_editext"
+            android:hint="@string/hint_nome"
+            android:inputType="textPersonName"
+            android:maxLength="64" />
+
+        <EditText
+            android:id="@+id/usuario"
+            style="@style/bg_editext"
+            android:hint="@string/hint_usuario"
+            android:inputType="textPersonName"
+            android:maxLength="32" />
+
+        <EditText
+            android:id="@+id/senha"
+            style="@style/bg_editext"
+            android:hint="@string/hint_senha"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/bg_editext"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="64" />
+
+        <Button
+            style="@style/button_text"
+            android:onClick="cadastrar"
+            android:text="@string/btn_cadastrar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/bg_no_backgroud"
+            android:layout_marginBottom="30dp"
+            android:onClick="login"
+            android:text="@string/btn_link_login" />
+    </LinearLayout>
+
+</LinearLayout>
